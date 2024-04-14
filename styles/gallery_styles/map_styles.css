@@ -1,0 +1,107 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Exa", sans-serif;
+    font-style: normal;
+}
+
+
+.map-container{
+    width: 100vw;
+    height: 200vh;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle,
+    rgba(255,255,255,1) 0%, rgba(72,187,210,0.4767156862745098)
+    0%, rgba(255,255,255,1) 54%);
+
+}
+
+#main-svg{
+    background: transparent;
+    width: 100vw;
+    height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    #main-svg{
+        background: transparent;
+        width: 90vw;
+    }
+
+}
+
+.rectangle{
+    stroke: #153355;
+    stroke-width: 2px;
+    transition: 0.3s;
+    fill: #378CE7;
+
+
+
+}
+
+.sub-rect{
+    stroke: black;
+    stroke-width: 2px;
+    fill: #378CE7;
+}
+
+#rect-splash{
+    width: 175px;
+    height: 75px;
+    stroke: black;
+    stroke-width: 2px;
+    fill: #378CE7;
+}
+
+.inner-text{
+    font-size: larger;
+    text-anchor: middle;
+}
+
+.common-line{
+    stroke: #C70039;
+    stroke-width: 2px;
+    transition: 0.2s;
+
+}
+
+#rect-1{
+    stroke: #FF0000;
+}
+
+#rect-8{
+    stroke: #153355;
+}
+
+#rect-9{
+    stroke: #153355;
+}
+
+#rect-splash{
+    stroke: #153355;
+}
+
+
+
+#main-svg g:hover .rectangle{
+    fill: rgba(103, 198, 227, 0.7);
+    stroke: black;
+    stroke-width: 3px;
+}
+
+#main-svg g:hover .inner-text{
+    font-weight: 700;
+}
+
+#main-svg g:hover .sub-rect{
+    fill: rgba(103, 198, 227, 0.7);
+    stroke: black;
+    stroke-width: 3px;
+}
+
+#main-svg g:hover .common-line{
+    stroke: black;
+}

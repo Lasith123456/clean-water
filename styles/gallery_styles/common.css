@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Exa", sans-serif;
+}
+body{
+    background: #d6d8ec;
+}
+
+:root{
+    --mainBlue:#4169E1;
+    --mainFontSize: 16px;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    /*border: 1px solid red;*/
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo-area, .cart-icon{
+    width: 300px;
+    height: 100%;
+        /*border: 1px solid red;*/
+
+}
+
+.main-nav{
+    width: calc(100% - 600px);
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+
+.logo-area{
+    width: 300px;
+    display: flex;
+    margin-left: 30px;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+.logo-area img{
+    width: auto;
+    height: 70%;
+    padding: 10px 0;
+    background: var(--mainBlue);
+}
+
+.logo-area h3{
+   text-align: end;
+    font-size: 20px;
+    color: var(--mainBlue);
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav ul{
+    display: flex;
+    list-style: none;
+}
+.main-nav ul li{
+    margin-right: 20px;
+    position: relative;
+}
+
+.main-nav ul li:last-child{
+    margin-right: 0;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: var(--mainBlue);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main-nav ul li:hover{
+    color: var(--mainBlue);
+}
+
+.main-nav ul li::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: var(--mainBlue);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.main-nav ul li:hover::after{
+    opacity: 1;
+}
+
+.cart-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-icon a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 600;
+    color: var(--mainBlue);
+    margin-left: 10px;
+}
+
+.hamburger{
+    display: none;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+
+.hamburger i{
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 600;
+    color: var(--mainBlue);
+
+    border: 1px solid var(--mainBlue);
+}
+
+@media (max-width: 1200px) {
+    .main-nav{
+        width: calc(100% - 400px);
+    }
+    .logo-area{
+        width:100px
+    }
+    .logo-area h3{
+        display: none;
+    }
+
+    .cart-icon{
+        width: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-nav ul li{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .cart-icon{
+        display: none;
+
+    }
+
+    .cart-icon a{
+        display: none;
+
+    }
+}
+
+
+.main-header{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: end;
+    background: var(--mainBlue);
+}
+
+.header{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.header p a{
+    text-decoration: none;
+    color: white;
+}
+
+.header p{
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .header p{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .header h1{
+        font-size: 3rem;
+    }
+}
+
+
+.social-media-area{
+    position: fixed;
+    right: 20px;
+    z-index: 1;
+
+
+
+}
+
+.m1{
+    width: 5rem;
+    height: 5rem;
+    margin: 0.2rem 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: all .2s ;
+
+
+}
+
+.m1:hover{
+   transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+
+.m1 i{
+    font-size: 3rem;
+}
+
+.fb{
+    margin-top: 2rem;
+    color: #1877F2;
+}
+
+.msger{
+    color: #00B2FF;
+}
+
+.insta{
+    color: #E1306C;
+}
+
+@media (max-width: 992px) {
+    .m1{
+        display: none;
+    }
+}
+
+.display{
+    width: 90%;
+    margin: 20px auto;
+    height: 100vh;
+    background: #dfe6e9 ;
+}
+
+@media (max-width: 992px) {
+    .display{
+        width: 100%;
+    }
+}
+
+/*==============================================================================================================*/
+
+footer {
+    /*background-color:#4169E1;*/
+    background-color:#023EBA;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add this to your existing CSS */
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change to the color you want on hover */
+}
+
+

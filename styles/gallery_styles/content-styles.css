@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Exa", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main-title-outer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+
+
+
+.grid-frame{
+
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+
+.grid-outer-1{
+
+    width: 60%;
+    height: 50%;
+    display: flex;
+
+}
+
+.grid-outer-2{
+
+    width: 40%;
+    height: 50%;
+    display: flex;
+}
+
+
+.item{
+
+    padding: 1rem;
+    background: #67C6E3;
+    width: 50vw;
+    margin: 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    -moz-box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    transition: 0.4s ease-in-out;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.item h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    margin: 30px 0 0 70px;
+    border-radius: 10px;
+    background: none;
+    border-color: #0056b3;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #0056b3;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.desc-outer{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.desc-card{
+
+    height: 500px;
+    padding-right: 20px;
+}
+
+.desc-card img{
+    height: 300px;
+    width: 350px;
+    float: left;
+    margin: 90px 10px 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.9);
+    transition: box-shadow 0.3s ease;
+
+}
+.card-2 {
+    padding-left: 10px;
+}
+
+.card-4{
+    padding-left: 10px;
+}
+
+.card-2 img{
+    float: right;
+}
+
+.card-4 img{
+    float: right;
+}
+
+.desc-card h2{
+    margin-top: 50px;
+    font-weight: bolder;
+    color: rgb(221, 225, 227);
+}
+
+
+.desc-card p{
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.card-1{
+    background: #67C6E3;
+}
+.card-2{
+    background: #007bff;
+}
+.card-3{
+    background: #67C6E3;
+}
+
+.card-4{
+    background: #007bff;
+}
+.card-5{
+    background: #67C6E3;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .grid-frame{
+
+        width: 100%;
+    }
+}
