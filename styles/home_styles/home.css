@@ -1,0 +1,429 @@
+/* Navigation bar */
+.nav-bar{
+    z-index: 3;
+    position: fixed;
+}
+
+/* Main header */
+.main-header{
+    height: calc(100vh - 80px); /* Takes up full viewport height minus 80px */
+    z-index: 1;/* Lower stacking order compared to nav-bar */
+}
+
+/* Social media area */
+.social-media-area{
+    position: fixed;
+    top: 20rem;/* Positioned 20rem from the top of the viewport */
+    z-index: 3;/* Higher stacking order compared to main-header */
+
+
+}
+
+/* Background image for main header */
+.main-header{
+    background-image: url("../../images/home_images/logo_background.jpg");
+    background-size: cover;/* Cover the entire header area */
+}
+
+/* Wrapper for header content */
+.header-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Container for header content */
+.header-contains{
+    margin-left: 3rem;
+    width: 80%;
+    height: 60%;
+    display: flex;
+}
+
+/* Outer container for logo */
+.outer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Logo image */
+.img-logo{
+    justify-content: end;
+    align-items: center;
+
+
+}
+
+/* Styling for logo image */
+.img-logo img{
+    width: 80%;
+    min-width: 15rem;
+    border-radius: 1rem;
+    height: inherit;
+}
+
+/* Description for logo */
+.img-desc{
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding-left: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input field inside image description */
+.img-desc input{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.img-desc input:hover{
+    background: black;
+
+}
+
+
+/* Media query for medium-sized screens */
+@media (max-width: 992px) {
+    .img-desc{
+        font-size: 2rem;/* Decrease font size */
+    }
+
+    .img-desc input{
+        width: 10rem;/* Decrease input width */
+        padding: 0.5rem;/* Decrease padding */
+    }
+}
+
+@media (max-width: 546px) {
+    .img-logo img{
+        min-width: 12rem;
+        border-radius: 0.5rem;
+    }
+    .img-desc{
+        font-size: 1rem;
+    }
+    .outer{
+        padding-left: 1rem;
+    }
+
+    .img-desc input{
+        width: 8rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Container for gallery */
+.gallery-outer{
+    width: 100%;
+    height: 100vh;
+    /*margin-top: 3rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+
+/* Background for gallery */
+.outer-background{
+    width: 100%;
+    height: 100%;
+    background: #F0FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Styling for h1 inside outer-background */
+.outer-background h1{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: #36454F;
+}
+
+/* Wrapper for gallery items */
+.gallery-item-Wrapper{
+    width: auto;
+    height: 80%;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: end;
+}
+
+/* Container for individual image */
+.image-outer{
+    width: 30rem;
+    height: 90%;
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+}
+
+
+/* Styling for image inside image-outer */
+.image-outer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+/* Container for content inside image-outer */
+.content-gallery{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    align-items: center;
+}
+
+
+/* Styling for input inside content-gallery */
+.content-gallery input{
+    width: auto;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    background: white;
+}
+
+/* Styling for p inside content-gallery */
+.content-gallery p{
+    color: white;
+    margin: 3rem 2rem 0.5rem 2rem;
+}
+
+
+.empty-box{
+    width: 100%;
+    height: 3rem;
+}
+
+/* Show content on hover */
+.content-gallery:hover{
+    opacity: 1;
+
+}
+
+@media (max-width: 992px) {
+
+    .image-outer {
+        width: calc(50% - 20px); /* Adjusted width for 2-column layout with margin */
+    }
+}
+
+@media (max-width: 546px) {
+    .gallery-item-Wrapper {
+        flex-direction: column; /* Change to vertical layout */
+    }
+    
+    .image-outer {
+        width: calc(100% - 20px); /* Adjusted width for full-width layout with margin */
+        margin: 0 10px 20px; /* Adjusted margin */
+    }
+}
+
+
+
+/* Container for hero section 2 */
+.hero-2-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/home_images/hero1.png.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling for heading inside hero-2-container */
+.hero-2-container h1{
+    color: white;
+    font-size: 2rem;
+    margin: 2rem 5rem;
+}
+
+
+/* Styling for paragraphs inside hero-2-container */
+.hero-2-container p{
+    color: white;
+    margin: 2rem 5rem;
+
+}
+
+/* Styling for input elements inside hero-2-container */
+.hero-2-container input{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.hero-2-container input:hover{
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.shop{
+    
+}
+
+/* Outer container for shop section */
+.shop-outer{
+    width:100%;
+    height: 60vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/home_images/target_BG.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+
+    
+
+}
+
+/* Container for shop items */
+.shop-items-outer{
+    width: 100%;
+    height: 95%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+/* Styling for first shop card outer container */
+.shop-card-outer1{
+    width: 30rem;
+    height:30rem;
+    background-image: url("../../images/home_images/target_logo.jpg");
+    border-radius: 10%;
+    background-repeat:no-repeat ;
+    background-position:  center ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    
+}
+
+
+
+.shop-items-outer a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.shop-items-outer a h2{
+    text-shadow: 4px 4px black;
+    position: absolute;
+}
+
+
+/* Styling for second shop card outer container */
+.shop-card-outer2{
+    width: 30rem;
+    height: 30rem;
+    background-image: url("../../images/home_images/things_to_do_logo.png");
+    border-radius: 10%;
+    background-color: blue;
+    background-repeat:no-repeat ;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center ;
+    margin-bottom: 1rem;
+}
+
+/* Styling for shop text */
+.shop-text {
+    text-align: center;
+    
+}
+
+/* Scale up shop card on hover */
+.shop-card-outer1:hover,
+.shop-card-outer2:hover {
+    transform: scale(1.05); /* Increase the scale on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.shop-card-outer1 a h2:hover,
+.shop-card-outer2 a h2:hover {
+    transform: scale(1.2); /* Increase the scale on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
+@media (max-width: 992px) {
+
+    .shop-card-outer1,
+    .shop-card-outer2{
+        width: 60% ; 
+    }
+}
+
+@media (max-width: 546px) {
+    .shop-card-outer1,
+    .shop-card-outer2{
+        width: 40%;
+    }
+    
+    .shop-card-outer1,
+    .shop-card-outer2{
+        width: calc(100% - 20px); /* Adjusted width for full-width layout with margin */
+        margin: 0 10px 20px; /* Adjusted margin */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

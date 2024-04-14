@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Exa", sans-serif;
+    /*box-sizing: border-box;*/
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main-title-outer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.header p:first-child{
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+
+
+
+.grid-frame{
+    /*border: 1px solid black;*/
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+
+.grid-outer-1{
+    /*border: 1px solid red;*/
+    width: 60%;
+    height: 50%;
+    display: flex;
+
+}
+
+.grid-outer-2{
+    /*border: 1px solid red;*/
+    width: 40%;
+    height: 50%;
+    display: flex;
+}
+
+
+.item{
+    /*border: 1px solid blue;*/
+    padding: 1rem;
+    background: #67C6E3;
+    width: 50vw;
+    margin: 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    -moz-box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.item a{
+
+    margin: 30px auto 70px;
+    border-radius: 10px;
+    border: 1px solid #0056b3;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5rem;
+    background: none;
+    color: black;
+}
+
+.item a:hover{
+    background: #0f1042;
+    color: white;
+    border: none;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.item h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.btn{
+
+}
+
+.btn:hover{
+    background: #0056b3;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.desc-outer{
+    /*border: 1px solid blue;*/
+    display: grid;
+    /*gap: 1rem;*/
+    grid-template-columns: 1fr;
+    /*grid-row-gap: 45px;*/
+    /*background-color: rgb(0, 149, 255);*/
+}
+
+.desc-card{
+    /*border: 1px solid red;*/
+    height: 500px;
+    padding-right: 20px;
+}
+
+.desc-card img{
+    height: 300px;
+    width: 350px;
+    float: left;
+    margin: 90px 10px 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.9);
+    transition: box-shadow 0.3s ease;
+
+}
+.card-2 {
+    padding-left: 10px;
+}
+
+.card-4{
+    padding-left: 10px;
+}
+
+.card-2 img{
+    float: right;
+}
+
+.card-4 img{
+    float: right;
+}
+
+.desc-card h2{
+    margin-top: 50px;
+    font-weight: bolder;
+    color: rgb(221, 225, 227);
+}
+
+
+.desc-card p{
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.card-1{
+    background: #67C6E3;
+}
+.card-2{
+    background: #007bff;
+}
+.card-3{
+    background: #67C6E3;
+}
+
+.card-4{
+    background: #007bff;
+}
+.card-5{
+    background: #67C6E3;
+}
+
+/*-----------------------------------------Footer----------------------------------------------------------------------*/
+
+footer {
+    /*background-color:#4169E1;*/
+    background-color:#023EBA;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add this to your existing CSS */
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change to the color you want on hover */
+}
+

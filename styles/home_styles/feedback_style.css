@@ -1,0 +1,91 @@
+
+/* Setting the font weight of the body to bolder */
+body{
+
+    
+    font-weight: bolder;
+    
+}
+
+.hero{
+   padding: 3rem;
+}
+
+/* Centering the h1 and h3 elements inside the .hero section */
+.hero h1 h3{
+    text-align: center;
+}
+
+/* Centering the content of the .feedback-form */
+.feedback-form{
+    text-align:center ;
+}
+
+/* Removing text decoration for all anchor tags */
+a{
+    text-decoration: none;
+}
+
+/* Centering the h1 and h3 elements */
+h1,h3{
+    text-align: center;
+}
+
+/* ======================================================================*/
+
+/* Styling for the container element */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for input, textarea, and select elements */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+     
+     border-radius: 6px;
+   
+}
+
+/* Styling for submit button */
+input[type="submit"] {
+    
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+   
+}
+
+/* Styling for reset button */
+input[type="reset"] {
+    
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+   
+}
+
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Hover effect for reset button */
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.footer-content{
+    margin-top: 2rem;
+}
+
+

@@ -1,0 +1,109 @@
+
+/* Apply text alignment and font weight to all elements */
+*{
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+/* Styling for the main header section */
+.main-header{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: end;
+    background: var(--mainBlue);/* Assuming this is a custom variable */
+}
+
+/* Styling for the header content */
+.header{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+/* Styling for the header title */
+.header h1{
+    font-size: 4rem;
+    color: white;
+}
+
+/* Styling for the header navigation links */
+.header p a{
+    text-decoration: none;
+    color: white;
+}
+
+.header p{
+    color: white;
+}
+
+/* Additional styling for header on smaller screens */
+@media (max-width: 576px) {
+    .header p{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .header h1{
+        font-size: 3rem;
+    }
+}
+
+
+*********************************************************************************************************************
+/* Styling for the title section */
+.title{
+    margin: 20px 0px 20px 0px;
+    background-color: rgba(0, 136, 255, 0.871);
+}
+
+/* Styling for the scroll bottom link */
+.scroll-bottom{
+    margin: 5px;
+}
+
+/* Styling for the tasks section */
+.tasks{
+    background-color: rgba(0, 136, 255, 0.871);
+   
+}
+
+/* Styling for student details */
+.student-details{
+    margin: 10px 0px 10px 0px;
+}
+
+/* Styling for individual tasks */
+.tasks-area-task{
+    margin: 40px 0px 25px 0px;
+}
+
+/* Styling for task descriptions */
+.task-area-task-discription{
+    margin-bottom: 25px;
+}
+
+/* Styling for task links */
+.tasks-area-task-link{
+    text-decoration: none;
+}
+
+/* Hover effect for task links */
+.tasks-area-task-link :hover{
+    color: aliceblue;
+}
+
+/* Styling for buttons */
+.button{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+   
+}
+

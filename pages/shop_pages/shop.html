@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="../../styles/shop_style/common.css">
+    <link rel="stylesheet" href="../../styles/home_styles/splash.css">
+    <link rel="stylesheet" href="../../styles/shop_style/shopStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<!-------------------------------------------------Nav bar----------------------------------------------------------------------->
+<nav>
+    <div class="nav-bar">
+        <div class="logo-area">
+            <img src="../../images/shop_images/logo.png" alt="">
+            <h3>6. clean water and sanitation</h3>
+        </div>
+        <div class="main-nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">UserProfile</a></li>
+                <li><a href="">FeedBack</a></li>
+                <li><a href="">SiteMap</a></li>
+                <li><a href="">Team</a></li>
+            </ul>
+        </div>
+        <div class="cart-icon">
+
+            <button class="cart-button" onclick="cartModalOpen()">
+                <span class="cart-value" id="cart-value">0</span>
+                <i class="ri-shopping-cart-line"></i>
+            </button>
+        </div>
+        <div class="hamburger">
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+</nav>
+
+<div class="main-header">
+    <div class="header">
+        <p id="main-header">Products</p>
+        <p><a href="">Home</a>&nbsp;>&nbsp;<a href="">Products</a></p>
+    </div>
+</div>
+
+<div class="social-media">
+    <div class="social-media-area">
+        <div class="m1 fb">
+            <i class="ri-facebook-fill"></i>
+        </div>
+        <div class="m1 msger">
+            <i class="ri-messenger-fill"></i>
+        </div>
+        <div class="m1 insta">
+            <i class="ri-instagram-fill"></i>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------Main Code-------------------------------------------------->
+
+<div id="main-display-area">
+    <div class="display-card">
+        <div class="category-area">
+            <div class="view-items">
+<!--                <div class="side-bar-headers">-->
+<!--                    <p>View Items : </p>-->
+<!--                </div>-->
+<!--                <div class="view-icons">-->
+<!--                    <button class="view-buttons"><i class="ri-list-view"></i></button>-->
+<!--                    <button class="view-buttons"><i class="ri-layout-grid-fill"></i></button>-->
+<!--                    <button class="view-buttons"><i class="ri-layout-grid-2-fill"></i></button>-->
+<!--                </div>-->
+                <div class="categories">
+                    <div class="side-bar-headers">
+                        <p>Categories:</p>
+                    </div>
+                    <div class="categories-section">
+                            <div class="categories-list" id="categories-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-display">
+            <div class="display-inner">
+                <div class="table-area" id="product-card"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="product-page">
+    <div id="prod-container-section">
+        <div class="product-outer-container" id="product-outer-container">
+
+        </div>
+
+    </div>
+</div>
+
+<div id="cart">
+    <div class="cart-container-section">
+        <div class="cart-outer-container" id="cart-outer">
+
+        </div>
+    </div>
+</div>
+
+<div id="payment">
+    <div class="payment-container-outer" id="check-out-window">
+        <div class="payment-container" id="payment-content">
+
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------Splash Screen------------------------------------------------------------->
+
+
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <ul>
+            <li><a href="page_editor_student_1.html">Lasith Hettiarachchi</a></li>
+            <li> | </li>
+            <li><a href="#">Janith Yasiru</a></li>
+            <li> | </li>
+            <li><a href="#">Sashan Fernando</a></li>
+            <li> | </li>
+            <li><a href="#">Ishan Dakshina</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="../../scripts/shop_scripts/shop.js"></script>
+<script src="../scripts/shopData.js"></script>
+</body>
+</html>

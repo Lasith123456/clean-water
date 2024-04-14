@@ -1,0 +1,351 @@
+/*  Reset default margin, padding, and font family */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Exa", sans-serif;
+    scroll-behavior: smooth;
+
+}
+/*  Hide horizontal scrollbar */
+body{
+    overflow-x: hidden;
+}
+/*  Styling for the main title section */
+.main-title-outer{
+    background-color: navy;
+    text-align: center;
+    padding: 10px 100px;
+    font-size: 4rem;
+}
+/*  Styling for main title headings */
+.main-title-outer h1{
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 100px;
+    font-size: 4rem;
+}
+.main-title-outer h2{
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 100px;
+    font-size: 3rem;
+}
+
+/*  Styling for the grid frame */
+.grid-frame{
+    border: 1px solid black;
+    /*width: 100vw;*/
+    width: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../images/profile_images/virus.jpg");
+
+}
+
+/*  Styling for the two grid outer containers */
+.grid-outer-1, .grid-outer-2{
+
+    width: 60%;
+
+    height: 50%;
+    display: flex;
+
+}
+/*  Styling for each grid item */
+.item{
+
+    padding: 1rem;
+    background: deepskyblue;
+    width: 50vw;
+    margin: 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    -moz-box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    box-shadow: 6px 6px 19px -4px rgba(0,0,0,0.55);
+    transition: 0.4s ease-in-out;
+}
+/*  Hover effect for grid items */
+.item:hover{
+    transform: scale(1.1);
+}
+/*  Styling for grid item headings */
+.item h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+/*  Styling for the buttons */
+.btn{
+    width: 100px;
+    height: 30px;
+    margin: 30px 0 0 70px;
+    border-radius: 10px;
+    background: none;
+    border-color: #0056b3;
+    cursor: pointer;
+}
+/*  Hover effect for buttons */
+.btn:hover{
+    background: #0056b3;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+/*  Styling for the description section */
+.desc-outer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*  Styling for each description card */
+.desc-card{
+    height:auto;
+    padding-right: 20px;
+}
+/*  Styling for images in description cards */
+.desc-card img{
+    height: 300px;
+    width: 350px;
+    float: left;
+    margin: 90px 10px 90px;
+    transition: box-shadow 0.3s ease;
+
+}
+/*  Hover effect for images in description cards */
+.desc-card img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0.5, 0.9);
+}
+.card-2 img{
+    float: right;
+}
+
+.card-4 img{
+    float: right;
+}
+.card-6 img{
+    float: right;
+}
+/*  Styling for description card headings */
+.desc-card h2{
+    margin-top: 50px;
+    font-weight: bolder;
+    color: rgb(221, 225, 227);
+}
+
+/*  Styling for description card paragraphs */
+.desc-card p{
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: justify;
+}
+/*  Background colors for each description card */
+.card-1{
+    background: #67C6E3;
+}
+.card-2{
+    background: #007bff;
+}
+.card-3{
+    background: #67C6E3;
+}
+
+.card-4{
+    background: #007bff;
+}
+.card-5{
+    background: #67C6E3;
+}
+.card-6{
+    background: #007bff;
+}
+
+@media (max-width: 1240px){
+    .grid-outer-1, .grid-outer-2{
+
+        width: 50%;
+
+        height: 50%;
+        display: flex;
+        padding-right: 50px;
+    }
+    .grid-frame{
+        border: 1px solid black;
+        /*width: 100vw;*/
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url("../../images/profile_images/virus.jpg");
+
+    }
+}
+
+
+@media (max-width: 1040px){
+    .grid-outer-1, .grid-outer-2{
+
+        width: 50%;
+
+        height: 50%;
+        display: flex;
+        padding-right: 100px;
+    }
+    .grid-frame{
+        border: 1px solid black;
+        /*width: 100vw;*/
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url("../../images/profile_images/virus.jpg");
+
+    }
+}
+
+@media (max-width: 990px){
+    .grid-outer-1, .grid-outer-2{
+
+        width: 40%;
+
+        height: 60%;
+        display: flex;
+        padding-right: 100px;
+    }
+    .grid-frame{
+        border: 1px solid black;
+        /*width: 100vw;*/
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        background: url("../../images/profile_images/virus.jpg");
+
+    }
+}
+
+
+
+@media (max-width: 740px){
+    .grid-outer-1, .grid-outer-2{
+
+        width: 30%;
+
+        height: 70%;
+        display: flex;
+        padding-right: 100px;
+    }
+    .grid-frame{
+        border: 1px solid black;
+        /*width: 100vw;*/
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        background: url("../../images/profile_images/virus.jpg");
+
+    }
+    .item h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .btn{
+        width: 100px;
+        height: 30px;
+        margin: 30px 0 0 30px;
+        border-radius: 10px;
+        background: none;
+        border-color: #0056b3;
+        cursor: pointer;
+    }
+}
+
+
+
+@media (max-width: 630px){
+    .grid-outer-1, .grid-outer-2{
+
+        width: 30%;
+
+        height: 70%;
+        display: flex;
+        padding-right: 100px;
+    }
+    .grid-frame{
+        border: 1px solid black;
+        /*width: 100vw;*/
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        background: url("../../images/profile_images/virus.jpg");
+
+    }
+    .item h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+
+    .btn{
+        width: 100px;
+        height: 30px;
+        margin: 20px 0 0 20px;
+        border-radius: 10px;
+        background: none;
+        border-color: #0056b3;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 560px){
+    .grid-outer-1, .grid-outer-2{
+
+        width: 20%;
+
+        height: 80%;
+        display: flex;
+        padding-right: 100px;
+    }
+    .grid-frame{
+        border: 1px solid black;
+        /*width: 100vw;*/
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        background: url("../../images/profile_images/virus.jpg");
+
+    }
+    .item h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 9px;
+    }
+
+    .btn{
+        width: 100px;
+        height: 30px;
+        margin: 20px 0 0 20px;
+        border-radius: 10px;
+        background: none;
+        border-color: #0056b3;
+        cursor: pointer;
+    }
+}

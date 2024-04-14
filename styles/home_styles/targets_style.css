@@ -1,0 +1,106 @@
+
+body{
+     /* Background image */
+   
+    height: auto;
+    background-size: cover;
+}
+
+/* Styling for the main header 1 */
+#main-header1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;   
+    margin-bottom:20px ;
+    
+}
+
+
+#main-header1 h1{
+    margin: 90px 50px 50px 50px ;
+    font-size: 75px;
+    font-weight: bolder;
+
+    
+}
+
+/* Styling for the targets section */
+.targets{    
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-row-gap: 45px;
+
+}
+
+.target{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the target images */
+.targets img{
+    height: 200px;
+    width: 140px;
+    float: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.9); 
+    transition: box-shadow 0.3s ease;
+      
+}
+
+/* Hover effect on target images */
+.targets img:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 1, 1); 
+}
+
+/* Styling for target headings */
+.targets h2{
+    font-weight: bolder;
+    color: rgb(0, 187, 255);
+}
+
+/* Styling for target paragraphs */
+.targets p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1130px) {  
+    
+    .targets img{
+        height: 230px;
+     }
+
+}
+
+
+@media only screen and (max-width: 992px) {  
+    .targets{ 
+        
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        grid-row-gap: 25px;
+       
+    }
+
+    .targets img{
+        height: 220px;
+     }
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+/* Reset default margin, padding, and set font family for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Exa", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+
+}
+/* Styles for the title section */
+.title{
+    /* Set margin, background color */
+    margin: 20px 0 20px 0;
+    background-color: rgba(0, 136, 255, 0.871);
+}
+/* Styles for the scroll-bottom section */
+.scroll-bottom{
+    /* Set margin */
+    margin: 5px;
+}
+/* Styles for the tasks section */
+.tasks{
+    /* Set background color */
+    background-color: rgba(0, 136, 255, 0.871);
+
+
+}
+/* Styles for the student details section */
+.student-details{
+    /* Set margin */
+    margin: 10px 0 10px 0;
+}
+
+/* Styles for the tasks area */
+.tasks-area-task{
+    /* Set margin */
+    margin: 40px 0 25px 0;
+
+}
+/* Styles for paragraphs inside tasks area */
+.tasks-area-task p{
+    /* Set font size */
+    font-size: 20px;
+}
+/* Styles for task descriptions */
+.task-area-task-discription{
+    /* Set margin bottom */
+    margin-bottom: 25px;
+
+}
+/* Styles for links inside tasks area */
+.tasks-area-task-link{
+    /* Remove underline from links */
+    text-decoration: none;
+
+}
+/* Styles for links inside tasks area */
+.tasks-area-task-link a{
+    /* Set link color and font size */
+    color: navy;
+    font-size: 20px;
+
+}
+/* Hover effect for links inside tasks area */
+.tasks-area-task-link :hover{
+    /* Change text color on hover */
+    color: aliceblue;
+
+}
+/* Styles for the profile picture */
+.profile_pic {
+    /* Set width, height, margin, border radius */
+    width: 10rem;
+    height: 25vh;
+    margin-top: 15px;
+    border-radius: 10px;
+
+    max-width: 100%; /* Added max-width property */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: center; /* Centers the image within the container */
+}
+
+.profile_pic:hover{
+    /* Increase box shadow on hover */
+    box-shadow: 0 8px 10px rgba(0, 0, 1, 1);
+}
+
+.button a{
+    background: #0f1042;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.button a:hover{
+    border: 1px solid white;
+    padding: 0.2rem 0.8rem;
+}
+
+.editor:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.contentpage:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.checkout:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.product:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.splash:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.shop:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.editor{
+    background: darkblue;
+}
+
+.contentpage{
+    background: darkblue;
+}
+.shop{
+    background: darkblue;
+}
+.splash{
+    background: darkblue;
+}
+.product{
+    background: darkblue;
+}
+.checkout{
+    background: darkblue;
+}
+
+/* Style for the <hr> tag */
+hr {
+    border: none;
+    height: 3px;
+    background-color: #ddd; /* Change the color as needed */
+    margin: 20px 0; /* Adjust the margin as needed */
+}

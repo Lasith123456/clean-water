@@ -1,0 +1,493 @@
+/* Styles for the main content body */
+.content-body{
+    /* Set width to 80%, height to full viewport height */
+    /* Background color and center alignment */
+    /* Use flexbox for layout */
+    width: 80%;
+    height:auto;
+    background: lightsteelblue;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+/* Styles for section c-1 */
+.c-1{
+    /* Use flexbox for center alignment */
+    /* Add padding to the top */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+/* Styles for section c-2 */
+.c-2{
+    /* Use flexbox for center alignment */
+    /* Add margin to the top */
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* Styles for subsection c-2-2 */
+.c-2-2{
+    /* Use flexbox for center alignment */
+    /* Adjust width using calc() */
+    /* Remove margin */
+    width: calc(100% - 85%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+/* Styles for subsection c-2-1 */
+.c-2-1{
+    /* Use flexbox for center alignment */
+    /* Adjust width and height */
+    /* Remove margin */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/* Styles for the progress element inside c-2-1 */
+.c-2-1 progress{
+    /* Set specific width and height */
+    /* Add margin to the left */
+    width: 50rem;
+    height: 5rem;
+    margin-left: 10px;
+
+}
+/* Styles for the input element inside c-2-2 */
+.c-2-2 input{
+    /* Add padding, border-radius, and other styles */
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: var(--mainBlue);
+    color: white;
+    cursor: pointer;
+}
+/* Styles for section c-3 */
+.c-3{
+    /* Set width, height, border, and background color */
+    /* Add margin to the top */
+    /* Add background color */
+    width: auto;
+    height: auto;
+    border: 3px solid royalblue;
+    margin-top: 50px;
+    background:steelblue;
+
+}
+/* Styles for subsection c-3-1 */
+.c-3-1{
+    /* Use flexbox for column layout */
+    /* Add margin */
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+/* Styles for the ul element inside c-3-1 */
+.c-3-1 ul{
+    /* Set list-style to none and add margin */
+    list-style: none;
+    margin: 10px 20px;
+}
+/* Styles for the h3 element inside .content */
+.content h3{
+    /* Set font-size */
+    font-size: 16px;
+}
+/* Styles for the popup overlay */
+.popup .overlay{
+    /* Position fixed, full screen, with background color and z-index */
+    /* Initially set to display: none */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+/* Styles for the popup content */
+.popup .content{
+    /* Position absolute, centered, with specific width, height, background color, and border */
+    /* Set text alignment, padding, box-sizing, and border-radius */
+    /* Initially set to scale(0) and no display */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0);
+    background: deepskyblue;
+    width: 550px;
+    height: 280px;
+    z-index: 2;
+    text-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: 3px solid darkblue;
+
+
+
+}
+
+.popup .content1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0);
+    background: #1877F2;
+    width: 400px;
+    height: 150px;
+    z-index: 2;
+    text-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: 3px solid lightskyblue;
+
+
+
+}
+/* Active styles for the popup overlay and content */
+.popup.active .overlay{
+    /* Display the overlay */
+    display: block;
+}
+
+.popup.active .content{
+    /* Transition effect to scale(1) when active */
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup.active .content1{
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content1{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content label{
+    margin-top: 20px;
+}
+
+.content1 label{
+    margin-top: 20px;
+}
+
+.content input{
+    font-size: 20px;
+    display: flex;
+}
+
+.content1 input{
+    font-size: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+.buttons{
+    margin: 180px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.buttons button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.skip:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+.next:hover{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+.skip{
+    background: royalblue;
+}
+
+.next{
+    background: royalblue;
+}
+.box-footer{
+    width: 100%;
+    height: 100vh;
+    background:#4169E1;
+}
+
+/* Additional styles for smaller screen sizes using media queries */
+@media(max-width:1290px ){
+
+    .c-2-2 input{
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width:1225px ){
+
+    .c-2-1 progress{
+        width: 35rem;
+
+    }
+
+    .c-2-2 input{
+        padding: 10px 10px;
+    }
+}
+@media(max-width:1120px ){
+
+    .c-2-1 progress{
+        width: 30rem;
+    }
+
+    .c-2-2 input{
+        padding: 10px 10px;
+    }
+}
+@media(max-width:990px ){
+
+    .c-2-1 progress{
+        width: 25rem;
+    }
+
+    .c-2-2 input{
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width:880px ){
+
+    .c-2-1 progress{
+        width: 20rem;
+        height: 3rem;
+
+    }
+
+    .c-2-2 input{
+        padding: 10px 10px;
+
+    }
+}
+
+@media(max-width:750px ){
+
+    .c-2-1 progress{
+        width: 15rem;
+        height: 3rem;
+
+    }
+
+    .c-2-2 input{
+        padding: 10px 5px;
+    }
+}
+
+@media(max-width:640px ){
+
+    .c-2-1 progress{
+        width: 13rem;
+        height: 3rem;
+
+    }
+
+    .c-2-2 input{
+        padding: 10px 5px;
+        font-weight: bold;
+    }
+
+    .popup .content{
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        height: 300px;
+        padding: 20px;
+    }
+
+    .popup .content1{
+
+        top: 50%;
+        left: 50%;
+        width: 270px;
+        height: 170px;
+        padding: 20px;
+
+    }
+
+    .content input{
+        font-size: 15px;
+
+    }
+
+    .content1 input{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:555px ){
+
+    .c-2-1 progress{
+        width: 10rem;
+        height: 3rem;
+
+    }
+
+    .c-2-2 input{
+        padding: 10px 5px;
+    }
+}
+
+@media(max-width:475px ){
+
+    .c-2-1 progress{
+        width: 10rem;
+        height: 3rem;
+
+    }
+
+    .c-2-2 input{
+        padding: 10px 5px;
+
+    }
+}
+@media(max-width:430px ){
+    .popup .content{
+        width: 250px;
+        height: 250px;
+    }
+
+    .popup .content1{
+        width: 220px;
+        height: 130px;
+    }
+
+    .content label{
+        font-size: 12px;
+    }
+
+    .content1 label{
+        margin-top: 10px;
+    }
+
+    .content input{
+        font-size: 10px;
+    }
+
+    .content1 input{
+        font-size: 12px;
+        margin-top:0;
+    }
+    .buttons{
+        margin: 150px 15px;
+    }
+
+    .content h3{
+        font-size: 12px;
+    }
+    .c-3-1 h3{
+        font-size:16px ;
+    }
+    .c-3-1 ul{
+        font-size:10px ;
+        margin: 10px 0 ;
+        font-weight: bold;
+    }
+
+
+}
+
+@media(max-width:300px ){
+
+    .c-2-1 progress{
+        width: 10rem;
+        height: 3rem;
+
+    }
+
+    .c-2-2 input{
+        padding: 10px 5px;
+    }
+
+    .c-2-1{
+        display: table-column;
+    }
+}
+@media(max-width:285px ){
+    .popup .content{
+        width: 150px;
+        height: 350px;
+    }
+
+    .popup .content1{
+        width: 130px;
+        height: 135px;
+    }
+
+    .content1 label{
+        margin-top: 6px;
+        font-size: 10px;
+    }
+
+    .content input{
+        font-size: 10px;
+    }
+
+    .content1 input{
+        font-size: 7px;
+        border-radius: 5px;
+        width: 5rem;
+        height:50%;
+    }
+    .buttons{
+        margin: 180px 5px;
+    }
+
+    .buttons button{
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    .content h3{
+        font-size: 12px;
+    }
+    .c-3-1 h3{
+        font-size:14px ;
+    }
+    .c-3-1 ul{
+        font-size:8px ;
+        margin: 10px 0 ;
+        font-weight: bold;
+    }
+}
+
+
+
