@@ -2,22 +2,22 @@
 
 let imageDetails = [
     {
-        image: "../images/img-1.jpg",
+        image: "../../images/gallery_images/img-1.jpg",
         title: "Water Droplet",
         desc: "Perfect droplet, a tiny crystal of clarity, descends one by one. The container of clean water it meets is inviting, with only slight ripples on the surface as a result of its arrival. A reminder of the significance of clean water and sanitation for a healthy world, this tiny addition revitalizes the life-giving resource."
     },
     {
-        image:"../images/img-2.jpg",
+        image:"../../images/gallery_images/img-2.jpg",
         title:"Poverty, Clean Water & Sanitation",
         desc: "Unclean water and poor sanitation cause illness, obstruct access to jobs and education, and keep communities in poverty. To end this cycle, clean water and sanitary infrastructure investments are crucial."
     },
     {
-        image:"../images/img-3.jpg",
+        image:"../../images/gallery_images/img-3.jpg",
         title:"Availability",
         desc:"The availability of potable water, sufficient sanitary facilities, and the encouragement of hygienic habits. In addition to promoting general health and wellbeing, it guarantees the prevention of waterborne illnesses."
     },
     {
-        image:"../images/img-4.jpg",
+        image:"../../images/gallery_images/img-3.jpg",
         title:"Sanitizing",
         desc:"An essential component of good hygiene, hand sanitization frequently supports initiatives for clean water and sanitation. It involves killing bacteria on hands with alcohol-based solutions or sanitising wipes to improve general health and stop the spread of disease."
     },
@@ -160,17 +160,27 @@ document.querySelectorAll('.more-button').forEach(button => {
 
         const parentImageFrame = button.closest('.image-frame');
         const image = parentImageFrame.querySelector('img');
+
+        console.log(parentImageFrame.querySelector('img'))
       
         document.querySelector('.image-pop img').src = image.getAttribute('src');
         
         document.querySelector('.image-pop').style.display = 'block';
 
-        let imageObj = imageDetails.find((e)=>e.image === image.getAttribute('src'))
+
+
+        let imageObj = imageDetails.find((e)=>e.image === image.getAttribute('src'));
 
         console.log(imageObj);
 
-        document.getElementById("title").textContent = imageObj.title
-        document.getElementById("desc-para").textContent = imageObj.desc
+        if (imageObj){
+            document.getElementById("title").textContent = imageObj.title;
+            document.getElementById("desc-para").textContent = imageObj.desc;
+        }else{
+            console.log('No matching object')
+        }
+
+
 
 
 
