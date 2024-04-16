@@ -45,6 +45,10 @@
     border-radius: 10px;
 
 }
+
+.about-container:first-child{
+    background-position: center;
+}
 /* Styles for details container inside about container */
 .container-details{
     /* Set position, top, left, width, height, background, and border radius */
@@ -474,6 +478,7 @@
         width: 7rem;
         height: 20vh;
         margin-top: 25px;
+
     }
     .about-outer h1{
         font-size: 15px;
@@ -505,5 +510,3 @@
         }
     }
 }
-
-

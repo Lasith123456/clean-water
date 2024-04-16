@@ -2,25 +2,25 @@ let team = [
     // Array of team members with their details
     {
         name:"Lasith Ranishka",
-        image:"../images/Student_01.jpg",
+        image:"../../images/profile_images/Student_01.jpg",
         role:"Student 1",
         tasks:"\nSplash Screen | Shop"
     },
     {
         name:"Yasiru Lakshitha",
-        image:"../images/Student_02.jpg",
+        image:"../../images/profile_images/Student_02.jpg",
         role:"Student 2",
         tasks:"\nHome Page | Feedback"
     },
     {
         name:"Sashan Fernando",
-        image:"../images/Student_03.jpg",
+        image:"../../images/profile_images/Student_03.jpg",
         role:"Student 3",
         tasks:"\nUser Profile | Team"
     },
     {
         name:"Ishan Dakshina",
-        image:"../images/Student_04.jpg",
+        image:"../../images/profile_images/Student_04.jpg",
         role:"Student 4",
         tasks:"\nGallery | Sitemap"
     },
